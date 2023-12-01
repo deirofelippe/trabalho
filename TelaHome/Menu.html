@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d4c1afd8e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img class="logo" src="logo-pizzaria-upp---primary.png" alt="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="../Tela Quem Somos/index.html">Quem Somos</a></li>
+        <li><a href="../Tela Cardápio/index.html">Cardápio</a></li>
+        <li><a href="../Tela-Modelo-Banco/index.html">DER</a></li>
+      </ul>
+     <!--<div class="user-pic"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>--> 
+     <div class="profile-dropdown">
+      <div onclick="toggle()" class="profile-dropdown-btn">
+        <div class="profile-img"> <i class="fa-regular fa-user"></i> 
+          <div class="ball-green"></div>
+        </div>
+
+        <span
+          >Victoria
+          <i class="fa-solid fa-angle-down"></i>
+        </span>
+      </div>
+
+        <ul class="profile-dropdown-list">
+        <hr />
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Log out
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+      <!--<div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+           <i class="fa-solid fa-user"></i>
+            <h5>Usuário Master</h5>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-door-open"></i>
+            <p>Sair</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>-->
+
+      <div class="mobile-menu-icon">
+        <button type="button" onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+    </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../Tela Quem Somos/index.html" class="nav-link">Quem Somos</a></li>
+          <li class="nav-item"><a href="../Tela Cardápio/index.html" class="nav-link">Cardápio</a></li>
+          <li class="nav-item"><a href="../Tela-Modelo-Banco/index.html" class="nav-link">DER</a></li>
+          <!--<div class="user-pic2"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>--> 
+          
+      </ul>
+      <div class="profile-dropdown2">
+        <div onclick="toggle()" class="profile-dropdown-btn">
+          <div class="profile-img"> <i class="fa-regular fa-user"></i> 
+            <div class="ball-green"></div>
+          </div>
+  
+          <span
+            >Victoria
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+        </div>
+  
+          <ul class="profile-dropdown-list">
+          <hr />
+  
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  
+    
+
+  
+
+
+      <section>
+
+        <!--PRIMEIRA-IMAGEM-->
+        <div class="primeira-imagem">
+          <div class="background-image"></div>
+          <div class="inicial-content">
+            <h1 class="title">Traga seu batalhão para conhecer a melhor pizzaria do Rio de Janeiro</h1>
+           <input type="button" class="btn-acesso" value="Acesse o nosso cardápio de pizzas" onclick="Acesseonossocardápiodepizzas()" id="acesso-cardapio">
+          </div>
+        </div>
+
+      </section>
+        
+    
+      <div class="wrapper">
+
+    <section class="carousel-section">
+     
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" placeholder="a">
+        <input type="radio" name="radio-btn" id="radio2" placeholder="a">
+        <input type="radio" name="radio-btn" id="radio3" placeholder="a">
+        <input type="radio" name="radio-btn" id="radio4" placeholder="a">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="Banner pizza vem pra selva.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="Banner promo casal.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="Banner unidades.png" alt="">
+        </div>
+      </div>
+      <!--slide images end-->
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+</section>
+
+
+  <section class="module-parallax-2">
+
+     <!--EM-BREVE-NA-UPP-->
+    <h6>Em breve na UPP</h6>
+
+    <div class="cubos-todos">
+
+      <div class="cubo-grande">
+            <img src="Card-pizza-linha-amarela.jpeg" alt="">
+      </div>  
+
+      <div class="cubo-menor">
+                
+        <div class="cubo-pequeno">
+            <img src="imagem-promocao-1.jpeg" alt="">
+        </div>
+        <div class="cubo-pequeno">
+            <img src="imagem-promocao-2.jpeg" alt="">
+        </div>
+
+        <div class="cubo-pequeno">
+            <img src="imagem-promocao-3.jpeg" alt="">
+        </div>
+        <div class="cubo-pequeno">
+            <img src="imagem-promocao-4.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <!--SLIDE-AREA-DAS-PIZZAS-->
+    <div class="fundo-slide">
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="slider.css">
+  
+      <h6 class="titulo-slide-2">Área das Pizzas</h6>
+      <section id="tranding">
+    
+        <div class="container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="img.pizza-frango.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$24</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Canta, galo!
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="img-pizza-quatro-queijos.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$30</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Amarelinho
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="Pizza-banana-preço.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$28</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Nevou aí?
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="Pizza-Vegana-Preço.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$29</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Vem pra selva!
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="pizza-ouro-preto-preço.avif" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$27</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Ouro Preto
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="Pizza-camarão-preço.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$26</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Beco do Camarão
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="img-pizza-bacon-AT.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$31</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Cabeça de Porco
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="img-pizza-calabresa.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$31</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Tradicional UPP
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="Pizza-alho-preço.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">R$25</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Areinha
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+  
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+  
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
+
+  
+       
+    
+  
+    <div class="encaixe-btn">
+    <button type="button" class="btn-area-pizzas" value="Pedir Pizza" id="pizza-valores" onclick="acesso()">Pedir Pizza</button>
+  </div>
+  </div>
+  
+
+          <!--CENTRALIZA-CARD-->
+           <h6>Espaço UPP</h6>
+
+           <div class="centraliza-card">
+    
+            <div class="card-flip">
+                
+                <div class="front">
+                    <img src="img-espaço-oficial.jpg" alt="">
+                   <h3 class="text-shadow">Espaço</h3>
+                </div>
+                
+                <div class="back">
+                   <h2>Espaço</h2>
+                   <p>Aqui disponibilizamos amplo espaço para você se deliciar com nossas pizzas a lenha junto a sua turma.</p>
+                   
+                </div>
+            </div>
+            <div class="card-flip">
+                
+                <div class="front">
+                    <img src="imagem-conforto-oficial.webp" alt="">
+                    <h3 class="text-shadow">Conforto</h3>
+                </div>
+                
+                <div class="back">
+                   <h2>Conforto</h2>
+                   <p>Nossa empresa preza pelo conforto e zelo de nossos clientes, por isso disponibilizamos uma arquitetura temática e bem aconchegante para todos.</p>
+                </div>
+            </div>
+      
+            <div class="card-flip">
+                
+                <div class="front">
+                    <img src="imagem-franquia-oficial.jpg" alt="">
+                   <h3 class="text-shadow">Franquias</h3>
+                </div>
+                
+                <div class="back">
+                   <h2>Franquias</h2>
+                   <p>Temos 3 lojas localizadas em torno do Rio de Janeiro, uma na Barra da Tijuca, outra em Copacabana e nossa loja principal que fica em Bangu.</p>
+                   
+                </div>
+            </div>
+
+      
+  </section>
+
+
+  <!--PROFILE-CARD-->
+  <section class="module content">
+
+
+    <h6>Comentários em Destaques</h6>
+    <div class="depoimentos">
+      <figure class="profile-card">
+          
+          
+        <div class="profile-body">
+
+            <div class="profile-header">
+                <img src="img-escritorio-oficial.webp" alt="Capa Perfil">
+          </div>
+          
+            <div class="img-perfil">
+                <img src="img-pessoa-1.jfif" alt="perfil">
+            </div>
+          
+                <div class="titulo">Mônica Ferreira</div>
+                <figcaption class="descricao">
+                   
+                   <p>
+                       "Minha experiência foi perfeita, pizza muito boa e um lugar muito legal para ir com os amigos."
+                   </p>
+                </figcaption>
+          </div>
+    
+    </figure>
+
+
+    <figure class="profile-card">
+          
+        <div class="profile-body">
+
+            <div class="profile-header">
+                <img src="img-escritorio-oficial.webp" alt="Capa Perfil">
+          </div>
+          
+            <div class="img-perfil">
+                <img src="img-pessoa-2.jpg"  alt="perfil">
+            </div>
+          
+                <div class="titulo">Fernando Motta</div>
+                <figcaption class="descricao">
+                   
+                   <p>
+                       "Minha primeira vez nesse estabelecimento e fui embora maravilhado, atendimento perfeito e a comida com o sabor delicioso, recomendo."
+                   </p>
+                </figcaption>
+          </div>
+    
+    </figure>
+
+    <figure class="profile-card">
+          
+          
+        <div class="profile-body">
+
+            <div class="profile-header">
+                <img src="img-escritorio-oficial.webp" alt="Capa Perfil">
+          </div>
+          
+            <div class="img-perfil">
+                <img src="img-pessoa-3.jpg" alt="perfil">
+            </div>
+          
+                <div class="titulo">Renata Abreu</div>
+                <figcaption class="descricao">
+                   
+                   <p>
+                       "Levei a minha família e meus filhos amaram, o ambiente temático os deixaram encantados, experiência perfeita."
+                   </p>
+                </figcaption>
+          </div>
+    
+    </figure>
+
+
+    <figure class="profile-card">
+        
+          
+        <div class="profile-body">
+
+            <div class="profile-header">
+                <img src="img-escritorio-oficial.webp" alt="Capa Perfil">
+          </div>
+          
+            <div class="img-perfil">
+                <img src="img-pessoa-4.jpg" alt="perfil">
+            </div>
+          
+                <div class="titulo">Enrico Albuquerque</div>
+                <figcaption class="descricao">
+                   
+                   <p>
+                       "Levei meus colegas de trabalho e foi simplesmente insano, gostei demais das opções, meus colegas aprovaram."
+                   </p>
+                </figcaption>
+          </div>
+    
+    </figure>
+    </div>
+   
+   
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="../Tela Quem Somos/index.html">Quem Somos</a></li>
+              <li><a href="../Tela Cardápio/index.html">Cardápio</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="#">(21) 3489-2537</a></li>
+              <li><a href="#">PizzariaUPP@hotmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Franquias</h4>
+            <ul>
+              <li><a href="#">Bangu</a></li>
+              <li><a href="#">Barra da Tijuca</a></li>
+              <li><a href="#">Copacabana</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nos siga nas redes sociais</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  </div>
+
+  
+<script src="Menu.js"></script>
+
+
+</body>
+</html>

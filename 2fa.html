@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="2fa.css" />
+    <title>2FA</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Segundo Fator de Autenticação</h1>
+      <form id="login-form">
+        <label type="text" id="perguntaLabel"
+          >Qual a data de nascimento da sua mãe ?</label
+        >
+        <input type="text" id="input" name="resposta" required /><br />
+        <input type="hidden" name="pergunta" id="pergunta" value="" />
+
+        <button type="submit" id="btnSubmit">Entrar</button>
+      </form>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+      // Array de perguntas
+      var perguntas = [
+        "Qual é o nome da sua mãe?",
+        "Qual é a data do seu nascimento?",
+        "Qual é o CEP do seu endereço?",
+      ];
+
+      var perguntaSelecionada =
+        perguntas[Math.floor(Math.random() * perguntas.length)];
+
+      document.getElementById("perguntaLabel").innerText = perguntaSelecionada;
+      document.getElementById("pergunta").value = perguntaSelecionada;
+
+      var input = document.getElementById("input");
+
+      if (perguntaSelecionada === "Qual é a data do seu nascimento?") {
+        input.type = "date";
+        input.placeholder = "Data de Nascimento *";
+        input.maxLength = 8;
+        input.addEventListener("blur", function () {
+          formatarData(input);
+        });
+      } else if (perguntaSelecionada === "Qual é o CEP do seu endereço?") {
+        input.type = "text";
+        input.placeholder = "CEP *";
+        input.maxLength = 8;
+        input.addEventListener("blur", function () {
+          formatarCep(input);
+        });
+      }
+
+      function formatarData(input) {
+        var value = input.value;
+        value = value.replace(/\D/g, "");
+        value = value.replace(/(\d{2})(\d)/, "$1/$2");
+        value = value.replace(/(\d{2})(\d)/, "$1/$2");
+        input.value = value;
+      }
+
+      function formatarCep(input) {
+        var value = input.value;
+        value = value.replace(/\D/g, "");
+        value = value.replace(/^(\d{5})(\d)/, "$1-$2");
+        input.value = value;
+      }
+
+      $("#btnSubmit").on("click", function (event) {
+        $("#loader").show();
+        event.preventDefault();
+
+        var formData = new FormData();
+
+        var url = "http://localhost:41062/www/bd_pizzaria/2fa.php";
+        // var url = "http://localhost/bd_pizzaria/2fa.php";
+        var pergunta = perguntaSelecionada;
+        var resposta = document.getElementById("input").value;
+
+        formData.append("pergunta", pergunta);
+        formData.append("resposta", resposta);
+
+        $.ajax({
+          url: url,
+          type: "POST",
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function (response) {
+            if (response === "true") {
+              window.location.href = "/bd_pizzaria/TelaHome/home.php";
+            } else if (response === "false") {
+              window.location.href = "/bd_pizzaria/TelaLogin/login.php";
+            } else {
+              window.location.href = "/bd_pizzaria/TelaLogin/login.php";
+            }
+          },
+          error: function (error) {
+            console.log("Erro na solicitação:", error);
+          },
+        });
+        $("#loader").hide();
+      });
+    </script>
+  </body>
+</html>

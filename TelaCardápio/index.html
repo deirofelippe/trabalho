@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d4c1afd8e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Cardápio</title>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img class="logo" src="logo-pizzaria-upp---primary.png" alt="logo">
+      <ul>
+        <li><a href="../TelaHome/home.php">Home</a></li>
+        <li><a href="../Tela-Quem-Somos/index.html">Quem Somos</a></li>
+        <li><a href="#">Cardápio</a></li>
+        <li><a href="../Tela-Modelo-Banco/index.html">DER</a></li>
+      </ul>
+      <div class="user-pic"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+           <i class="fa-solid fa-user"></i>
+            <h5>Usuário Master</h5>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-door-open"></i>
+            <p>Sair</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button type="button" onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+    </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="../TelaHome/home.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../Tela-Quem-Somos/index.html" class="nav-link">Quem Somos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Cardápio</a></li>
+          <li class="nav-item"><a href="../Tela-Modelo-Banco/index.html" class="nav-link">DER</a></li>
+          <div class="user-pic2"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>
+      </ul>
+    </div>
+
+  </div>
+    
+        <h2>Cardápio de Pizzas</h2>
+        <div class="barra"></div>
+
+        <div class="container">
+            <div class="card-um">
+              <div class="content">
+                <h3>Nevou aí?</h3>
+                <p>Esta é uma pizza de banana nevada que faz sentido a Favela do Everest que fica em Inhaúma no Rio de Janeiro.</p>
+                <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+            </div>
+          </div>
+      
+            <div class="card-dois">
+              <div class="content">
+                <h3>Canta, Galo!</h3>
+                <p>Nossa gloriosa pizza de frango c/catupiry é inspirada na Favela do Canta Galo na Zona Sul do Rio de Janeiro.</p>
+                <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+              </div>
+            </div>
+
+            <div class="card-tres">
+              <div class="content">
+                <h3>Vem pra selva, vem!</h3>
+                <p>Nossa pizza vegana foi inspiriada na Favela da Selvinha no Rio de Janeiro e aguarda você que prefere outros derivados.</p>
+                <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+              </div>
+            </div>
+        </div>
+
+
+          <div class="cubo">
+            <div class="container">
+              <div class="card-quatro">
+                <div class="content">
+                  <h3>Areinha</h3>
+                  <p>Esta pizza de Alho foi inspirada na Favela da Areinha que fica localizada em Rio das Pedras no Rio de janeiro.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+              </div>
+            </div>
+      
+              <div class="card-cinco">
+                <div class="content">
+                  <h3>Beco do Camarão</h3>
+                  <p>A deliciosa pizza de camarão foi criada para representar a Favela do Beco do Camarão, em Santa Cruz.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+                </div>
+              </div>
+  
+              <div class="card-seis">
+                <div class="content">
+                  <h3>Ouro Preto</h3>
+                  <p>A nossa magnífica pizza de chocolate foi projetada para simbolizar a Favela Ouro Preto que fica na Zona Norte do Rio.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+                </div>
+              </div>
+            </div>   
+            
+            <div class="oioi">
+              <div class="container">
+              <div class="card-sete">
+                <div class="content">
+                  <h3>Tadicional UPP</h3>
+                  <p>A suculenta pizza de calabresa foi feita para personificar a nossa pizzaria de um jeito especial.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+                </div>
+              </div>
+
+              <div class="card-oito">
+                <div class="content">
+                  <h3>Amarelinho</h3>
+                  <p>A apetitosa pizza de quatro queijos foi desenvolvida para retratar a Favela Amarelinho, em Irajá.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+                </div>
+              </div>
+
+              <div class="card-nove">
+                <div class="content">
+                  <h3>Cabeça de Porco</h3>
+                  <p>A saborosa pizza de bacon foi desenvolvida para ilustrar a Favela Cabeça de Porco, na Taquara.</p>
+                  <button type="button" class="btn-pizzas-cardapio">Eu quero!</button>
+                </div>
+              </div>
+            </div>
+
+       </div>
+       
+       <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Empresa</h4>
+              <ul>
+                <li><a href="../Tela-Quem-Somos/index.html">Quem Somos</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contato</h4>
+              <ul>
+                <li><a href="#">(21) 3489-2537</a></li>
+                <li><a href="#">PizzariaUPP@hotmail.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Franquias</h4>
+              <ul>
+                <li><a href="#">Bangu</a></li>
+                <li><a href="#">Barra da Tijuca</a></li>
+                <li><a href="#">Copacabana</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nos siga nas redes sociais</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+
+<script src="Java.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+</body>
+</html>

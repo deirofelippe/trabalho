@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d4c1afd8e0.js" crossorigin="anonymous"></script>
+    <title>Tela do Modelo de Banco de Dados</title>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img class="logo" src="logo-pizzaria-upp--light.png" alt="logo">
+      <ul>
+        <li><a href="../TelaHome/home.php">Home</a></li>
+        <li><a href="../Tela-Quem-Somos/index.html">Quem Somos</a></li>
+        <li><a href="../TelaCardápio/index.html">Cardápio</a></li>
+        <li><a href="#">DER</a></li>
+      </ul>
+      <div class="user-pic"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+           <i class="fa-solid fa-user"></i>
+            <h5>Usuário Master</h5>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-door-open"></i>
+            <p>Sair</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button type="button" onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+    </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="../TelaHome/home.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../Tela-Quem-Somos/index.html" class="nav-link">Quem Somos</a></li>
+          <li class="nav-item"><a href="../TelaCardápio/index.html" class="nav-link">Cardápio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">DER</a></li>
+          <div class="user-pic2"><i class="fa-solid fa-user" onclick="toggleMenu()"></i></div>
+      </ul>
+    </div>
+
+  </div>
+
+
+   <div class="positioncard">
+    <div class="card">
+      <img class="img-modelo" src="img-modelo-banco-de-dados-der.jpeg" alt="">
+    </div>
+   </div>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Empresa</h4>
+              <ul>
+                <li><a href="../Tela-Quem-Somos/index.html">Quem Somos</a></li>
+                <li><a href="../TelaCardápio/index.html">Cardápio</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contato</h4>
+              <ul>
+                <li><a href="#">(21) 3489-2537</a></li>
+                <li><a href="#">PizzariaUPP@hotmail.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Franquias</h4>
+              <ul>
+                <li><a href="#">Bangu</a></li>
+                <li><a href="#">Barra da Tijuca</a></li>
+                <li><a href="#">Copacabana</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nos siga nas redes sociais</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+
+   <script src="java.js"></script>
+</body>
+</html>

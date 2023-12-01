@@ -1,0 +1,1079 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-image: url(img-fundo-branco-1.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/*Menu*/
+.hero{
+  width: 100%; 
+  position: relative;
+  background: #fff;
+}
+
+nav{
+  background: #fff;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo{
+  width: 120px;
+}
+
+.user-pic{
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul{
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #aa011c;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid #aa011c;
+
+}
+
+
+/*USER*/
+div .fa-user{
+  color: #aa011c;
+  font-size: 22px;
+}
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-heigth 0.5s;
+}
+
+/*.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}*/
+
+.sub-menu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info h5{
+  font-weight: 500;
+}
+
+.user-info i{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+} 
+
+.sub-menu hr{
+  border: 1;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p{
+  width: 100%;
+}
+
+.sub-menu-link i{
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
+
+/*MOBILE-MENU-DESKTOP*/
+
+.mobile-menu-icon {
+  display: none;
+  border-radius: 50%;
+  border: 2px solid black;
+  height: 40px;
+  background-color: #aa011c;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul li a{
+  color: #aa011c;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.user-pic2{
+  display: none;
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+
+/*MENU MOBILE*/
+@media screen and (max-width: 800px) {
+  /*MENU-PADRÃO*/
+  .hero ul{
+    display: none;
+  }
+  .user-pic{
+    display: none;
+  }
+
+  .user-pic2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.2rem;
+  }
+
+  /*MENU-MOBILE*/
+  .nav-bar {
+      padding: 1.5rem 4rem;
+  }
+  .nav-item {
+      display: none;
+  }
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+      display: block;
+      padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+      width: 100%;
+  }
+  .open {
+      display: block;
+  }
+}*
+  
+ 
+
+  /*H2 E BARRA*/
+  h2{
+    font-family: sans-serif;
+    color: #23232e;
+    font-size: 1.8rem;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+  
+  .barra{
+    width: 120px;
+    height: 6px;
+    background-color: #aa011c;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+   /*card-um*/
+   .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 100px;
+  }
+
+  .container .card-um{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);*/
+    background-image: url(Pizza-banana-preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-um .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-um:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-um .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-um .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    margin-top: 20px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  /*carde-dois*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-dois{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-frango-valor.avif);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-dois .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-dois:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-dois, .content h3{
+    font-size: 1.7em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-dois .content p{
+    font-size: 0.8em;
+    font-family: sans-serif;
+    color: #fff;
+    max-height: 200px;
+    font-weight: 300;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  /*carde-tres*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-tres{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-Vegana-Preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-tres .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-tres:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .container .card-tres, .content h3{
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-tres .content p{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: #fff;
+    max-height: 200px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+
+
+ 
+  /*CUBO*/
+  .cubo{
+    margin-top: 100px;
+  }
+
+ 
+
+  /*card-quatro*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-quatro{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-alho-preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-quatro .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-quatro:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-quatro .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-quatro .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+
+  /*card-cinco*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-cinco{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-camarão-preço.png);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-cinco .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-cinco:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-cinco .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-cinco .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 20px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+
+  /*card-seis*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-seis{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pizza-ouro-preto-preço.avif);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-seis .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-seis:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-seis .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-seis .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+
+  /*oioi*/
+  .oioi{
+    margin-top: 100px;
+  }
+
+  /*card-sete*/
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-sete{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img-pizza-calabresa.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-sete .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-sete:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-sete .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-sete .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  /*card-oito*/
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-oito{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img-pizza-quatro-queijos.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-oito .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-oito:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-oito .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-oito .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  /*card-nove*/
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-nove{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img-pizza-bacon-AT.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-nove .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-nove:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-nove .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-nove .content p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 300;
+    max-height: 200px;
+    align-items: left;
+    margin-top: 50px;
+  }
+
+  .btn-pizzas-cardapio{
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #aa011c;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .btn-pizzas-cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+
+ 
+
+
+  /*FOOTER*/
+  .footer-container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col ul{
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 150px;
+    font-family: sans-serif;
+  }
+  .footer-col{
+     width: 25%;
+     height: 200px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #aa011c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #aa011c;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+      margin: 0;
+  }
+  }
+  @media(max-width: 350px) {
+    .container .card-um .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-dois .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-tres .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-quatro .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-cinco .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-seis .content p{
+      font-size: 1.1rem;
+    }
+    .container .card-sete .content p{
+      font-size: 1.1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  

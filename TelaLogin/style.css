@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background-image: url(imagem-tela-login.jpg);
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*FORM-BOX*/
+.form-box{
+    position: relative;
+    width: 100%;
+   
+    max-width: 400px;
+    padding: 2rem;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 477px){
+    .form-box {
+        max-width: 280px;
+    }
+    .inputbox{
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 353px) {
+    .form-box{
+        max-width:  230px;
+    }
+    .inputbox {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 303px) {
+    .form-box{
+        max-width: 200px;
+    }
+    .inputbox{
+        max-width: 200px;
+    }
+}
+
+
+
+/*H2*/
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+/*INPUTBOX*/
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+
+/*SUBMIT*/
+.btn-solid{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #aa011c;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-solid:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #aa011c;
+    transition: 0.5s;
+}
+
+/*REGISTER*/
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #aa011c;
+    font-weight: bold;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
